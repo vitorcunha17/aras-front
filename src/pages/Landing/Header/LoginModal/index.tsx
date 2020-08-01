@@ -1,10 +1,10 @@
 import React, { ForwardRefRenderFunction, forwardRef, useState, useImperativeHandle, useEffect, useContext } from 'react'
 import { Modal, Form, Input } from 'antd'
+import { useForm } from 'antd/lib/form/util';
 import logoTransparente from "../../../../images/logo_circular.png";
 import { useMutation } from 'react-apollo';
 import { Credentials, SigninResponse, SigninVariables } from './interfaces';
 import { SIGNIN } from './graphql';
-import { useForm } from 'antd/lib/form/util';
 import { UserContext } from '../../../../contexts/UserContext';
 import { useHistory } from 'react-router-dom';
 
