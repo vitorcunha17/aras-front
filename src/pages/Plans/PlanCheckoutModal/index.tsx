@@ -1,6 +1,6 @@
 import React, { ForwardRefRenderFunction, forwardRef, useState, useImperativeHandle } from 'react'
 import { Modal, Button, Form, Input, InputNumber } from 'antd'
-import { useForm } from 'antd/lib/form/util'
+// import { useForm } from 'antd/lib/form/util'
 import { Plan } from '../../../interfaces/Plan'
 import { useMutation } from 'react-apollo'
 import { CHECKOUT_PLAN } from './graphql'
@@ -13,7 +13,7 @@ const PlanCheckoutModal: ForwardRefRenderFunction<{ open(plan: Plan): void }> = 
     const [visible, setVisible] = useState<boolean>(false)
     const [plan, setPlan] = useState<Plan>(null)
 
-    const [form] = useForm()
+    // const [form] = useForm()
 
     const [checkoutPlan, { loading }] = useMutation<CheckoutPlanResponse, CheckoutPlanVariables>(CHECKOUT_PLAN)
 
@@ -57,12 +57,12 @@ const PlanCheckoutModal: ForwardRefRenderFunction<{ open(plan: Plan): void }> = 
                 <Button key="cancelar" onClick={close}>
                     Cancelar
                 </Button>,
-                <Button loading={loading} key="pagar" type="primary" onClick={() => form.submit()}>
+                <Button loading={loading} key="pagar" type="primary">
                     Pagar
                 </Button>,
             ]}
         >
-            <Form layout="vertical" form={form} onFinish={onFinish}>
+            <Form layout="vertical" onFinish={onFinish}>
                 <p>
                     Valor: R$ {plan?.amount/100},00
                 </p>

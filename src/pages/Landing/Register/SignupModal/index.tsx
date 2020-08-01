@@ -1,6 +1,6 @@
 import React, { FunctionComponent, ForwardRefRenderFunction, useState, forwardRef, useImperativeHandle } from 'react'
 import { Modal, Form, Input, Alert, DatePicker, InputNumber } from 'antd'
-import { useForm } from 'antd/lib/form/util'
+// import { useForm } from 'antd/lib/form/util'
 import logoTransparente from '../../../../images/logo_circular.png'
 import { useMutation } from 'react-apollo'
 import { SIGNUP } from './graphql'
@@ -14,7 +14,7 @@ const SignupModal: ForwardRefRenderFunction<{ open(): void }> = ({ }, ref) => {
     const [visible, setVisible] = useState<boolean>(false)
     const [visibleAlert, setVisibleAlert] = useState<boolean>(false)
 
-    const [form] = useForm()
+    // const [form] = useForm()
 
     const [signup, { data, loading }] = useMutation<SignupResponse, SignupVariables>(SIGNUP)
 
@@ -62,12 +62,12 @@ const SignupModal: ForwardRefRenderFunction<{ open(): void }> = ({ }, ref) => {
                     <span style={{ fontWeight: "bold" }}>Formuláro de Matrícula</span>
                 </div>
             }
-            onOk={() => form.submit()}
+            // onOk={() => form.submit()}
             onCancel={close}
             cancelText="Cancelar"
             okText="Matricular-se"
         >
-            <Form form={form} onFinish={onFinish} layout="vertical">
+            <Form onFinish={onFinish} layout="vertical">
                 <Form.Item
                     label="Nome completo"
                     name="name"
