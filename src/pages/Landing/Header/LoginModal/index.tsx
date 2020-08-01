@@ -59,7 +59,7 @@ const LoginModal: ForwardRefRenderFunction<{ open(): void }> = ({ }, ref) => {
                             marginLeft: "-15px"
                         }}
                     ></img>
-                    &nbsp;<span style={{ fontWeight: "bold" }}>BEM VINDO A MTT</span>
+                    &nbsp;<span style={{ fontWeight: "bold" }}>BEM VINDO!</span>
                 </div>
             }
             visible={visible}
