@@ -24,18 +24,18 @@ const AboutUs: FunctionComponent = ({ }) => {
     const classes = useStyles()
 
     return (
-        <Grid id="sobrenos">
+        <Grid id="quemsomos">
             <Grid item xs={12} md={12} lg={12}>
                 <Paper elevation={0} className={classes.sidebarAboutBox}>
                     <Typography variant="h6" gutterBottom>
-                        Sobre Nós
+                        Quem Somos?
                     </Typography>
                     <Typography>
-                        Texto sobre o aras texto sobre o aras texto sobre o aras texto sobre o aras
-                        texto sobre o aras texto sobre o aras texto sobre o aras texto sobre o aras
-                        texto sobre o aras texto sobre o aras texto sobre o aras texto sobre o aras
-                        texto sobre o aras texto sobre o aras texto sobre o aras texto sobre o aras
-                        texto sobre o aras texto sobre o aras texto sobre o aras texto sobre o aras.
+                        O centro de treinamento Paradise Ranch vem desde 1982 trabalhando com a criação e venda de cavalos, das raças Appaloosa, Quarto de Milha e Paint Horse.
+                        A partir do ano de 2005 passamos a trabalhar com alojamento e treinamento de cavalos em diversas modalidades, hoje tendo como principal modalidade o laço
+                        em dupla, mas também atuando na doma de cavalos, ranch sorting, laço de bezerro, breakway roping (laço feminino) e 3 tambores, atuando também ministrando
+                        aulas de equitação básica adulto e infantil, alojamento e reabilitação de cavalos, com uma estrutura de cocheiras de alvenaria, piquetes e pastos, tanto
+                        para cavalos quanto para os animais envolvidos nos treinamentos.
                     </Typography>
                 </Paper>
                 <Typography variant="h6" gutterBottom className={classes.sidebarSection}>

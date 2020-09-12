@@ -8,7 +8,7 @@ const Register: FunctionComponent = ({ }) => {
     return (
         <>
             <Row id="matricula">
-                <Col lg={24} md={24} sm={24}>
+                <Col lg={24} md={24} sm={24} style={{ width: "100%" }}>
                     <div className="bg-matricula" onClick={() => signupModal.current?.open()} style={{ cursor: 'pointer' }}>
                         <br />
                         <br />

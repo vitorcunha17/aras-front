@@ -10,9 +10,10 @@ const sections = [
     { title: "Notícias", url: "#noticias" },
     { title: "Garanhões", url: "#garanhoes" },
     { title: "Matrizes", url: "#matrizes" },
-    { title: "Potros", url: "#potros" },
+    { title: "Animais à venda", url: "#animaisvenda" },
     { title: "Estrutura", url: "#estrutura" },
-    { title: "Sobre Nós", url: "#sobrenos" }
+    { title: "Nossa História", url: "#historia" },
+    { title: "Quem somos?", url: "#quemsomos" }
 ];
 
 const Header: FunctionComponent = ({ }) => {

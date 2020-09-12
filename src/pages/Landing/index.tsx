@@ -11,6 +11,8 @@ import Grid from "@material-ui/core/Grid";
 import FeaturedPost from './FeaturedPost';
 import Register from './Register';
 import AboutUs from './AboutUs';
+import Stallions from './Stallions';
+import History from './History';
 import Footer from './Footer';
 
 const Landing: FunctionComponent = ({ }) => {
@@ -34,6 +36,7 @@ const Landing: FunctionComponent = ({ }) => {
                             <img src={img1} alt="img4" />
                         </div>
                     </Carousel>
+                    <hr />
                     <br />
                     <h1 style={{ textAlign: "center", fontWeight: "bold" }} id="noticias">
                         Notícias
@@ -43,7 +46,12 @@ const Landing: FunctionComponent = ({ }) => {
                         <FeaturedPost />
                     </Grid>
                     <br />
+                    <hr />
+                    <Stallions />
+                    <br />
                     <Register />
+                    <br />
+                    <History />
                     <br />
                     <AboutUs />
                     <br />
