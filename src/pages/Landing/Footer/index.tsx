@@ -14,7 +14,7 @@ const Footer: FunctionComponent = ({ }) => {
                     PARADISE RANCH
                 </Typography>
                 <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                    RUA DINO VEIGA, N.28 - BANDEIRANTES - PR - CENTRO. CEP. 86360-000
+                    LEÓPOLIS - PR
                 </Typography>
                 <Typography variant="body2" color="textSecondary" align="center">
                     {'Copyright © '}

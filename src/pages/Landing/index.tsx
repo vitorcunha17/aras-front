@@ -7,6 +7,8 @@ import img1 from "../../images/1.jpg";
 import img2 from "../../images/2.jpg";
 import img3 from "../../images/3.jpg";
 import img4 from "../../images/4.jpg";
+import rh from "../../images/rh.png";
+import odonto from "../../images/odonto.jpeg";
 import Grid from "@material-ui/core/Grid";
 import FeaturedPost from './FeaturedPost';
 import Register from './Register';
@@ -54,6 +56,16 @@ const Landing: FunctionComponent = ({ }) => {
                     <History />
                     <br />
                     <AboutUs />
+                    <br />
+                    <h1 style={{ textAlign: "center", fontWeight: "bold" }} id="noticias">
+                        Parceiros
+                    </h1>
+                    <Grid container spacing={4}>
+                        <div style={{ textAlign: 'center' }}>
+                            <img src={rh} alt="rh" width="24%" />
+                            <img src={odonto} alt="odonto" width="20%" />
+                        </div>
+                    </Grid>
                     <br />
                     <Footer />
                 </main>
